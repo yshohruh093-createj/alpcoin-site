@@ -4,73 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alpcoin - Official Site</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
       font-family: 'Montserrat', sans-serif;
-      height: 100%;
+      color: white;
       background: url('https://cdn.pixabay.com/photo/2023/11/08/05/18/hunter-peak-8372563_1280.jpg') no-repeat center center fixed;
       background-size: cover;
     }
+
     .overlay {
+      background: rgba(0, 0, 0, 0.6);
       position: fixed;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
+      z-index: 0;
+    }
+
+    nav {
       background-color: rgba(0, 0, 0, 0.6);
-      z-index: -1;
+      z-index: 1;
     }
-    .navbar {
-      background-color: rgba(0, 0, 0, 0.7);
-    }
+
     .navbar-brand img {
-      height: 50px;
+      height: 48px;
+      border-radius: 12px;
     }
+
+    .navbar-elements {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
     .btn-wallet {
       background-color: #00c2ff;
       border: none;
-      padding: 8px 16px;
+      padding: 6px 14px;
       border-radius: 8px;
+      font-size: 14px;
       color: white;
     }
+
+    .form-select {
+      font-size: 14px;
+      width: 80px;
+    }
+
     .content {
-      padding-top: 120px;
+      position: relative;
+      z-index: 1;
       text-align: center;
-      color: white;
+      padding-top: 100px;
+      padding-bottom: 40px;
     }
-    .section {
-      padding: 80px 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-    }
+
     .social-icons img {
       width: 32px;
       margin: 0 8px;
     }
-    .footer {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 20px;
-      color: white;
-      text-align: center;
+
+    .section {
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 20px;
+      border-radius: 12px;
     }
-    a.text-white:hover {
-      text-decoration: underline;
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+      position: relative;
     }
   </style>
 </head>
 <body>
   <div class="overlay"></div>
-
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-between">
       <a class="navbar-brand" href="#"><img src="https://i.postimg.cc/RZSN0MPJ/id53b3.jpg" alt="Alpcoin Logo"></a>
-      <div class="d-flex ms-auto align-items-center">
-        <button class="btn btn-wallet me-3">Connect Wallet</button>
-        <select class="form-select form-select-sm bg-dark text-white" style="width: auto;">
+      <div class="navbar-elements">
+        <button class="btn-wallet">Connect</button>
+        <select class="form-select form-select-sm bg-dark text-white">
           <option selected>🇺🇿 UZ</option>
           <option>🇬🇧 EN</option>
         </select>
@@ -79,48 +98,38 @@
   </nav>
 
   <div class="content">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Kelajakni birgalikda quramiz</h1>
-      <p class="lead">Alpcoin – ishonch, niyat va imkoniyat!</p>
-      <div class="social-icons mt-4">
-        <a href="https://t.me/alpcoinoficcal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
-        <a href="https://instagram.com/alpcoinofficial" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-        <a href="https://youtube.com/@alpcoinofficial" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
-        <a href="https://x.com/AlpcoinGlobal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="Twitter"></a>
-      </div>
+    <h1 class="display-4 fw-bold">Kelajakni birgalikda quramiz</h1>
+    <p class="lead">Alpcoin – ishonch, niyat va imkoniyat!</p>
+    <div class="social-icons mt-4">
+      <a href="https://t.me/alpcoinoficcal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"></a>
+      <a href="https://instagram.com/alpcoinofficial" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a>
+      <a href="https://youtube.com/@alpcoinofficial" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"></a>
+      <a href="https://x.com/AlpcoinGlobal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"></a>
     </div>
   </div>
 
   <div class="section text-center" id="about">
-    <div class="container">
-      <h2>About Alpcoin</h2>
-      <p>Alpcoin is a humanitarian and future-driven crypto project designed to empower individuals, create financial freedom, and fund meaningful missions worldwide.</p>
-    </div>
+    <h2>About Alpcoin</h2>
+    <p>Alpcoin is a humanitarian and future-driven crypto project designed to empower individuals, create financial freedom, and fund meaningful missions worldwide.</p>
   </div>
 
   <div class="section text-center" id="roadmap">
-    <div class="container">
-      <h2>Roadmap</h2>
-      <ul class="list-unstyled">
-        <li><strong>2025 Q3:</strong> Token launch, Website, Team building</li>
-        <li><strong>2025 Q4:</strong> Airdrop campaign, Social growth, Partnerships</li>
-        <li><strong>2026 Q1:</strong> Alpcoin App, Real-world use cases</li>
-      </ul>
-    </div>
+    <h2>Roadmap</h2>
+    <ul class="list-unstyled">
+      <li><strong>2025 Q3:</strong> Token launch, Website, Team building</li>
+      <li><strong>2025 Q4:</strong> Airdrop campaign, Social growth, Partnerships</li>
+      <li><strong>2026 Q1:</strong> Alpcoin App, Real-world use cases</li>
+    </ul>
   </div>
 
   <div class="section text-center" id="partners">
-    <div class="container">
-      <h2>Partners</h2>
-      <p>Coming soon...</p>
-    </div>
+    <h2>Partners</h2>
+    <p>Coming soon...</p>
   </div>
 
   <div class="section text-center" id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:contact@alpcoin.org" class="text-white">contact@alpcoin.org</a></p>
-    </div>
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@alpcoin.org" class="text-white">contact@alpcoin.org</a></p>
   </div>
 
   <div class="footer">
