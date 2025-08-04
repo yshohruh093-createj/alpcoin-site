@@ -1,84 +1,118 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="uz">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official Alpcoin Website - A humanitarian and future-driven crypto project." />
-  <title>Alpcoin</title>
-  <link rel="icon" href="https://i.postimg.cc/RZSN0MPJ/id53b3.jpg" />
+  <title>Alpcoin - Kelajakni birga quramiz</title>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      background: url('https://i.postimg.cc/02fbF5Tc/mountain-sea-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      overflow: hidden;
     }
-    body {
-      background: linear-gradient(to bottom, #4d9ec9, #d3f1ff);
-      color: white;
-      text-align: center;
-      min-height: 100vh;
+
+    .overlay {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.45);
       padding: 20px;
     }
+
     .logo {
-      width: 120px;
-      height: 120px;
+      width: 180px;
       margin-bottom: 20px;
-      animation: fadeIn 1.5s ease-in-out;
     }
-    .lang-select, .wallet-btn, .slogan {
-      margin: 10px 0;
-      animation: fadeIn 2s ease-in-out;
-    }
-    .wallet-btn button {
-      background-color: #ffffff;
-      color: #036;
-      border: none;
-      padding: 12px 24px;
+
+    .language-select select {
+      padding: 5px 10px;
       font-size: 16px;
+      margin-bottom: 20px;
       border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
     }
-    .wallet-btn button:hover {
-      background-color: #e0f0ff;
-    }
-    .slogan {
-      font-size: 18px;
-      font-weight: 500;
-      max-width: 90%;
-    }
-    select {
-      padding: 6px;
-      font-size: 14px;
-      border-radius: 6px;
+
+    .wallet-button button {
+      background-color: #00c896;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
       border: none;
-      color: #036;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(10px); }
-      100% { opacity: 1; transform: translateY(0); }
+
+    .slogan {
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: 500;
     }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .social-links a {
+      color: white;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .social-links a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
     @media (max-width: 600px) {
-      .wallet-btn button {
-        width: 90%;
+      .logo {
+        width: 120px;
+      }
+
+      .slogan {
+        font-size: 16px;
+      }
+
+      .wallet-button button {
+        font-size: 14px;
+        padding: 8px 16px;
       }
     }
   </style>
 </head>
 <body>
-  <img class="logo" src="https://i.postimg.cc/RZSN0MPJ/id53b3.jpg" alt="Alpcoin Logo" />  <div class="lang-select">
-    <select>
-      <option value="uz">🇺🇿 UZ</option>
-      <option value="en">🇬🇧 EN</option>
-    </select>
-  </div>  <div class="wallet-btn">
-    <button>Connect Wallet</button>
-  </div>  <div class="slogan">
-    <p>Kelajakni birgalikda quramiz<br />Alpcoin – ishonch, niyat va imkoniyat!</p>
+  <div class="overlay">
+    <img src="https://i.postimg.cc/RZSN0MPJ/id53b3.jpg" alt="Alpcoin Logo" class="logo" />
+    <div class="language-select">
+      <select>
+        <option>🇺🇿 UZ</option>
+        <option>🇬🇧 EN</option>
+        <option>🇷🇺 RU</option>
+      </select>
+    </div>
+    <div class="wallet-button">
+      <button>🔗 Wallet ulash</button>
+    </div>
+    <p class="slogan">Kelajakni birga quramiz...</p>
+    <div class="social-links">
+      <a href="https://t.me/alpcoinoficcal" target="_blank">Telegram</a>
+      <a href="https://www.instagram.com/alpcoinofficial" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@alpcoinofficial" target="_blank">YouTube</a>
+      <a href="https://x.com/AlpcoinGlobal" target="_blank">Twitter</a>
+    </div>
   </div>
 </body>
 </html>
