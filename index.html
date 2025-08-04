@@ -2,27 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alpcoin - Future with Trust</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Rubik', sans-serif;
-      background: url('https://i.postimg.cc/XvLgZ5Jv/mountain-sea-bg.jpg') no-repeat center center fixed;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1)), 
+                  url('https://i.postimg.cc/XvLgZ5Jv/mountain-sea-bg.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: white;
+      color: #fff;
       text-align: center;
+      line-height: 1.6;
     }
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 30px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
     }
     .logo img {
-      height: 64px;
+      height: 60px;
       border-radius: 12px;
     }
     nav {
@@ -34,33 +40,48 @@
       padding: 8px 14px;
       border: none;
       border-radius: 8px;
-      background: #28a745;
-      color: white;
-      cursor: pointer;
       font-size: 14px;
+      cursor: pointer;
+      color: white;
     }
-    h1 {
+    nav button {
+      background: #28a745;
+    }
+    nav select {
+      background: #007bff;
+    }
+    .hero {
       margin-top: 80px;
+      padding: 20px;
+    }
+    .hero h1 {
       font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
     }
     section {
-      background: rgba(0,0,0,0.6);
+      background: rgba(0, 0, 0, 0.6);
       margin: 40px auto;
       padding: 30px;
       max-width: 800px;
       border-radius: 16px;
+      text-align: left;
+    }
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #00e1ff;
     }
     footer {
       margin-top: 60px;
       padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
     }
-    .language {
-      background: #007bff;
-    }
-    a {
-      color: #fff;
-      text-decoration: none;
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -72,15 +93,17 @@
     </div>
     <nav>
       <button>Connect Wallet</button>
-      <select class="language">
+      <select>
         <option value="uz">🇺🇿 UZ</option>
         <option value="en">🇬🇧 EN</option>
       </select>
     </nav>
   </header>
 
-  <h1>Kelajakni birgalikda quramiz</h1>
-  <p style="font-size: 20px;">Alpcoin – ishonch, niyat va imkoniyat!</p>
+  <div class="hero">
+    <h1>Kelajakni birgalikda quramiz</h1>
+    <p>Alpcoin – ishonch, niyat va imkoniyat!</p>
+  </div>
 
   <section>
     <h2>About Alpcoin</h2>
@@ -92,7 +115,7 @@
 
   <section>
     <h2>Roadmap</h2>
-    <ul style="list-style: none; padding: 0; text-align: left;">
+    <ul>
       <li><strong>2025 Q3:</strong> Token launch, Website, Team building</li>
       <li><strong>2025 Q4:</strong> Airdrop campaign, Social growth, Partnerships</li>
       <li><strong>2026 Q1:</strong> Alpcoin App, Real-world use cases</li>
