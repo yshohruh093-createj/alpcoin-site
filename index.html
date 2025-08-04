@@ -3,134 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alpcoin - Future with Trust</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"/>
+  <title>Alpcoin</title>
+  <link rel="icon" href="https://i.postimg.cc/RZSN0MPJ/id53b3.jpg" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Rubik', sans-serif;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1)), 
-                  url('https://i.postimg.cc/XvLgZ5Jv/mountain-sea-bg.jpg') no-repeat center center fixed;
-      background-size: cover;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #007BFF, #ffffff);
       color: #fff;
       text-align: center;
-      line-height: 1.6;
     }
+
     header {
+      padding: 20px;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+    }
+
+    .lang-wallet {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
     }
-    .logo img {
-      height: 60px;
-      border-radius: 12px;
-    }
-    nav {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-    nav button, nav select {
-      padding: 8px 14px;
-      border: none;
-      border-radius: 8px;
-      font-size: 14px;
-      cursor: pointer;
+
+    .lang-wallet button {
+      background: rgba(255, 255, 255, 0.1);
       color: white;
+      border: 1px solid white;
+      border-radius: 6px;
+      padding: 8px 16px;
+      cursor: pointer;
     }
-    nav button {
-      background: #28a745;
+
+    h1 {
+      margin-top: 40px;
+      font-size: 32px;
     }
-    nav select {
-      background: #007bff;
+
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      color: #f0f0f0;
     }
-    .hero {
-      margin-top: 80px;
-      padding: 20px;
-    }
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 20px;
-    }
-    section {
-      background: rgba(0, 0, 0, 0.6);
-      margin: 40px auto;
-      padding: 30px;
-      max-width: 800px;
-      border-radius: 16px;
-      text-align: left;
-    }
-    section h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: #00e1ff;
-    }
+
     footer {
-      margin-top: 60px;
+      margin-top: 40px;
       padding: 20px;
-      background: rgba(0, 0, 0, 0.6);
       font-size: 14px;
+      color: #eee;
     }
-    ul {
-      padding-left: 20px;
+
+    @media (max-width: 600px) {
+      .lang-wallet {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">
-      <img src="https://i.postimg.cc/RZSN0MPJ/id53b3.jpg" alt="Alpcoin Logo" />
-    </div>
-    <nav>
+    <img src="https://i.postimg.cc/RZSN0MPJ/id53b3.jpg" alt="Alpcoin Logo" class="logo" />
+    <div class="lang-wallet">
+      <button>🇺🇿 UZ</button>
       <button>Connect Wallet</button>
-      <select>
-        <option value="uz">🇺🇿 UZ</option>
-        <option value="en">🇬🇧 EN</option>
-      </select>
-    </nav>
+    </div>
   </header>
 
-  <div class="hero">
+  <main>
     <h1>Kelajakni birgalikda quramiz</h1>
-    <p>Alpcoin – ishonch, niyat va imkoniyat!</p>
-  </div>
-
-  <section>
-    <h2>About Alpcoin</h2>
-    <p>
-      Alpcoin is a humanitarian and future-driven crypto project designed to empower individuals, 
-      create financial freedom, and fund meaningful missions worldwide.
+    <p>Alpcoin – ishonch, niyat va imkoniyat!<br>
+      Alpcoin is a humanitarian and future-driven crypto project designed to empower individuals, create financial freedom, and fund meaningful missions worldwide.
     </p>
-  </section>
 
-  <section>
     <h2>Roadmap</h2>
-    <ul>
-      <li><strong>2025 Q3:</strong> Token launch, Website, Team building</li>
-      <li><strong>2025 Q4:</strong> Airdrop campaign, Social growth, Partnerships</li>
-      <li><strong>2026 Q1:</strong> Alpcoin App, Real-world use cases</li>
-    </ul>
-  </section>
+    <p>
+      2025 Q3: Token launch, Website, Team building<br>
+      2025 Q4: Airdrop campaign, Social growth, Partnerships<br>
+      2026 Q1: Alpcoin App, Real-world use cases
+    </p>
 
-  <section>
     <h2>Partners</h2>
     <p>Coming soon...</p>
-  </section>
 
-  <section>
     <h2>Contact Us</h2>
     <p>Email: contact@alpcoin.org</p>
-  </section>
+  </main>
 
   <footer>
     © 2025 Alpcoin. All rights reserved.
